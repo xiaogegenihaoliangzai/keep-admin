@@ -10,7 +10,11 @@
 			</el-table-column>
 			<el-table-column prop="teacherlev" label="等级" >
 			</el-table-column>
+<<<<<<< HEAD
 			<el-table-column prop="teacher" label="教练222" >
+=======
+			<el-table-column prop="teacher" label="教练" >
+>>>>>>> e2646884e2a9bb097737cda37590d02ceede31f7
 			</el-table-column>
 			<el-table-column prop="phone" label="号码" >
 			</el-table-column>
@@ -27,14 +31,24 @@
       return {
         tableData: [{
           date: '2016-05-03',
+<<<<<<< HEAD
           name: '魔鬼瘦臀2',
 		  teacherlev:"顶级",
           teacher: '国家顶级健身教练李寒樱21002',
+=======
+          name: '魔鬼瘦臀',
+		  teacherlev:"顶级",
+          teacher: '国家顶级健身教练李寒樱',
+>>>>>>> e2646884e2a9bb097737cda37590d02ceede31f7
 		  phone:"15012745526",
 		  time:"3.06s"
         }, {
           date: '2016-05-02',
+<<<<<<< HEAD
           name: '腹肌撕裂2',
+=======
+          name: '腹肌撕裂',
+>>>>>>> e2646884e2a9bb097737cda37590d02ceede31f7
 		  teacherlev:"顶级",
           teacher: '国家顶级健身教练李寒樱',
 		  phone:"15012745526",		  
@@ -43,6 +57,7 @@
         multipleSelection: []
       }
     },
+<<<<<<< HEAD
 	mounted(){
 		console.log("被启用.....")
 	},
@@ -56,6 +71,19 @@
           this.$refs.multipleTable.clearSelection();
         }
       },
+=======
+
+    methods: {
+      // toggleSelection(rows) {
+      //   if (rows) {
+      //     rows.forEach(row => {
+      //       this.$refs.multipleTable.toggleRowSelection(row);
+      //     });
+      //   } else {
+      //     this.$refs.multipleTable.clearSelection();
+      //   }
+      // },
+>>>>>>> e2646884e2a9bb097737cda37590d02ceede31f7
       handleSelectionChange(val) {
         this.multipleSelection = val;
       }
